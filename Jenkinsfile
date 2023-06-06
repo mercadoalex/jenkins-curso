@@ -4,7 +4,6 @@ pipeline {
         stage('ínfo'){
             steps{
                echo '¡Hola Mundo!'
-               echo $PATH 
             }
         }
         stage('Build Node') {
