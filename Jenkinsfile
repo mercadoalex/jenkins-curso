@@ -19,9 +19,6 @@ pipeline {
                     // rather than on a new node entirely:
                     reuseNode true
                 }
-                environment {
-                    PATH = '/usr/local/bin:/usr/bin:/bin:usr/sbin:sbin:/Applications/Docker.app/Contents/Resources/bin/:/Users/alexmarket/Library/Group\ Containers/group.com.docker/Applications/Docker.app/Contents/Resources/bin'
-                }
             }
             steps {
                 sh "env PATH=$PATH:\$PATH"
